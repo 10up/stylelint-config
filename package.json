@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/10up/stylelint-config.git"
   },
-  "keywords": [],
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "wordpress",
+    "coding-standards",
+    "10up"
+  ],
   "author": {
     "name": "10up",
     "email": "info@10up.com",
@@ -25,5 +31,10 @@
   "engineStrict": true,
   "engines": {
     "node": "~8.11"
+  },
+  "dependencies": {
+    "stylelint": "^9.5.0",
+    "stylelint-declaration-use-variable": "^1.7.0",
+    "stylelint-order": "^1.0.0"
   }
 }

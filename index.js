@@ -1,12 +1,14 @@
 "use strict";
 
 module.exports = {
+  extends: "stylelint-config-wordpress",
   plugins: [
     "stylelint-declaration-use-variable",
     "stylelint-order"
   ],
   rules: {
 
+    /*
     // WordPress Coding Standards
     // https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/
 
@@ -55,6 +57,11 @@ module.exports = {
     "declaration-block-single-line-max-declarations": 1,
     "value-keyword-case": "lower",
     "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-no-ignored-properties": null, */
+
+    "sh-waqar/declaration-use-variable": "/color/", // Use a variable for any property that contains "color"
+    "order/properties-alphabetical-order": true,
+
 
   }
 };

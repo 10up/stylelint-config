@@ -25,9 +25,6 @@ Then install the 10up Stylelint config:
 ```
 // NPM
 npm install @10up/stylelint-config --save-dev
-
-// Yarn
-yarn add @10up/stylelint-config
 ```
 
 ## Usage

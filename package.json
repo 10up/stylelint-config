@@ -1,12 +1,9 @@
 {
-  "name": "10up-stylelint-config",
+  "name": "@10up/stylelint-config",
   "version": "1.0.0",
   "description": "10up stylelint config for WordPress projects",
   "main": "index.js",
   "homepage": "https://github.com/10up/stylelint-config#readme",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/10up/stylelint-config.git"

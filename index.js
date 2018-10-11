@@ -10,6 +10,7 @@ module.exports = {
     "sh-waqar/declaration-use-variable": "/color/",
     "order/properties-alphabetical-order": true,
     "function-url-quotes": "always",
-    "selector-class-pattern": ""
+    "selector-class-pattern": null,
+    "no-eol-whitespace": null
   }
 };

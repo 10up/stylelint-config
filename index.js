@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     "sh-waqar/declaration-use-variable": "/color/",
     "order/properties-alphabetical-order": true,
-    "function-url-quotes": "always"
+    "function-url-quotes": "always",
+    "selector-class-pattern": ""
   }
 };

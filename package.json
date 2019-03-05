@@ -1,6 +1,6 @@
 {
   "name": "@10up/stylelint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "10up stylelint config for WordPress projects",
   "main": "index.js",
   "homepage": "https://github.com/10up/stylelint-config#readme",
@@ -16,7 +16,7 @@
     "10up"
   ],
   "peerDependencies": {
-    "stylelint": "^9.5.0"
+    "stylelint": "^9.10.1"
   },
   "files": [
     "index.js"
@@ -33,12 +33,12 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": "~8.11"
+    "node": ">=8.11"
   },
   "devDependencies": {
-    "stylelint": "^9.5.0",
+    "stylelint": "^9.10.1",
     "stylelint-config-wordpress": "^13.1.0",
     "stylelint-declaration-use-variable": "^1.7.0",
-    "stylelint-order": "^1.0.0"
+    "stylelint-order": "^2.1.0"
   }
 }

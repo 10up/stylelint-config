@@ -40,6 +40,24 @@ Add the following to your `.stylelintrc` file:
 
 ```
 
+### Webpack Setup
+Run `npm install stylelint-webpack-plugin --save-dev`. You should already have the proper loader in `postcss-loader`, but if you don't install that as well. After installing stylelint and the configuration above add the following to your Webpack config:
+
+```js
+import StyleLintPlugin from 'stylelint-webpack-plugin';
+
+plugins: [
+  new StyleLintPlugin( {
+    configFile: ".stylelintrc", // if your config is in a non-standard place
+    files: "src/**/*.css", // location of your CSS files
+    fix: true, // if you want to auto-fix some of the basic rules
+  } ),
+]
+
+```
+
+Read more about these options at [stylelint-webpack-plugin](https://github.com/webpack-contrib/stylelint-webpack-plugin), [the main stylelint documentation](https://stylelint.io/) and [postcss-loader](https://github.com/postcss/postcss-loader). That should be all you need, but if there are any errors in this documentation, [please file an issue and let us know](https://github.com/10up/stylelint-config/issues/new)!
+
 ## Usage with the [10up Theme Scaffold](https://github.com/10up/theme-scaffold)
 
 As of version [x] - this stylelint config as well as stylelint itself, will be included in the theme and plugin scaffolds.

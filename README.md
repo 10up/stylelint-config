@@ -33,7 +33,7 @@ Add the following to your `.stylelintrc` file:
 
 ```js
 {
-  "plugins": [
+  "extends": [
     "@10up/stylelint-config"
   ]
 }

@@ -11,7 +11,7 @@ module.exports = {
     "order/properties-alphabetical-order": true,
     "function-url-quotes": "always",
     "selector-class-pattern": null,
-    "no-eol-whitespace": null
+    "no-eol-whitespace": null,
     "selector-nested-pattern": ["^&"]
   }
 };

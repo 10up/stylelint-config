@@ -12,6 +12,7 @@ module.exports = {
     "function-url-quotes": "always",
     "selector-class-pattern": null,
     "no-eol-whitespace": null,
-    "selector-nested-pattern": ["^&"]
+    "selector-nested-pattern": ["^&"],
+    "no-descending-specificity": [true, { "severity": "warning" }],
   }
 };

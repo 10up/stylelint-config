@@ -39,6 +39,23 @@ Add the following to your `.stylelintrc` file:
 
 ```
 
+### SCSS: Selector Nested Pattern
+10up's Stylelint Config provides support out the box for `scss`. However, certain rules that apply to flavours of CSS (`post-css`, `scss`, `sass` etc) can cause a conflict in your build pipelines. One such rule is 
+[Selector Nested Pattern](https://stylelint.io/user-guide/rules/selector-nested-pattern). 
+
+By default we ensure that any nested `css` uses a prefixed `&` symbol, as required in languages like `post-css` or `postcss-preset-env`, however you will want to turn this off if using `scss`.
+
+To get around this issue, add the following to your projects, `.stylelintrc` 
+
+```js
+{
+  "rules": [
+    "selector-nested-pattern": null,
+  ]
+}
+
+```
+
 ### Webpack Setup
 Run `npm install stylelint-webpack-plugin --save-dev`. You should already have the proper loader in `postcss-loader`, but if you don't install that as well. After installing stylelint and the configuration above add the following to your Webpack config:
 

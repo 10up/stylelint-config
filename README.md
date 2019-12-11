@@ -40,13 +40,38 @@ Add the following to your `.stylelintrc` file:
 
 ```
 
-### SCSS: Selector Nested Pattern
-10up's Stylelint Config provides support out the box for `scss`. However, certain rules that apply to flavours of CSS (`post-css`, `scss`, `sass` etc) can cause a conflict in your build pipelines. One such rule is 
-[Selector Nested Pattern](https://stylelint.io/user-guide/rules/selector-nested-pattern). 
+### SCSS:
+By default 10up Stylelint Config does not support out-the-box support for `scss` based projects. That being said, it is not difficult to add support by following the below process:
+
+Install the `stylelint-scss` dependency:
+```
+// NPM
+npm install stylelint-scss --save-dev
+```
+
+You will then need to update the plugins section of your projects `.stylelintrc`:
+
+```
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+   ...
+  }
+}
+```
+
+A set of rules are located on the [packages NPM page](https://www.npmjs.com/package/stylelint-scss) if you would like to override or customize the defaults further.
+
+
+#### Selector Nested Pattern
+Certain rules that apply to flavours of CSS (`post-css`, `scss`, `sass` etc) can cause a conflict in your build pipelines. One such rule is
+[Selector Nested Pattern](https://stylelint.io/user-guide/rules/selector-nested-pattern).
 
 By default we ensure that any nested `css` uses a prefixed `&` symbol, as required in languages like `post-css` or `postcss-preset-env`, however you will want to turn this off if using `scss`.
 
-To get around this issue, add the following to your projects, `.stylelintrc` 
+To get around this issue, add the following to your projects, `.stylelintrc`
 
 ```js
 {

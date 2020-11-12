@@ -13,5 +13,6 @@ module.exports = {
     "selector-class-pattern": null,
     "no-eol-whitespace": null,
     "selector-nested-pattern": ["^&"],
+    "no-descending-specificity": null,
   }
 };
